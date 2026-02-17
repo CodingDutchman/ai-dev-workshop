@@ -2,7 +2,18 @@
 
 Get up and running in 5 minutes!
 
-## Step 1: Install Dependencies
+## Step 1: Install nvm
+
+See https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script for instructions on how to install nvm.
+
+## Step 2: Set the Node version
+
+```bash
+nvm use
+```
+This will use the version specified inside `.nvmrc`. If the version is not installed, nvm will prompt you to install it.
+
+## Step 3: Install Dependencies
 
 ```bash
 npm run install:all
@@ -10,7 +21,13 @@ npm run install:all
 
 This will install dependencies for the root project, frontend, and backend.
 
-## Step 2: Start the Application
+## Step 4: Build the application
+
+```bash
+npm run build
+```
+
+## Step 5: Start the Application
 
 ```bash
 npm run dev
@@ -18,19 +35,19 @@ npm run dev
 
 This starts both the backend (port 3001) and frontend (port 3000) servers.
 
-## Step 3: Open Your Browser
+## Step 6: Open Your Browser
 
 Navigate to [http://localhost:3000](http://localhost:3000)
 
 You should see the Workshop Starter App!
 
-## Step 4: Verify Everything Works
+## Step 7: Verify Everything Works
 
 1. **Add an item**: Fill out the form and click "Add Item"
 2. **View items**: See your item appear in the list below
 3. **Check the API**: Visit [http://localhost:3001/health](http://localhost:3001/health)
 
-## Step 5: Run Tests
+## Step 8: Run Tests
 
 ```bash
 npm test

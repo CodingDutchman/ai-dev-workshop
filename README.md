@@ -86,38 +86,33 @@ agentic-labs/
 ## 🛠️ Setup Instructions
 
 ### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
+- nvm (Node Version Manager)
+- Node.js (managed by nvm)
+- npm
 - OpenSpec CLI (`npm install -g openspec`) - For managing user stories and development tasks
 
 ### Installation
 
 1. **Clone or navigate to this directory**
 
-2. **Install all dependencies** (root, frontend, and backend):
+2. **Set the Node.js version**
+   ```bash
+   nvm use
+   ```
+   This will use the version specified in the .nvmrc file. If the version is not installed, nvm will prompt you to install it.
+
+3. **Install all dependencies** (root, frontend, and backend):
    ```bash
    npm run install:all
    ```
 
-   Or install individually:
-   ```bash
-   # Root dependencies
-   npm install
-
-   # Frontend dependencies
-   cd frontend && npm install
-
-   # Backend dependencies
-   cd ../backend && npm install
-   ```
-
-3. **Set up environment variables**:
+4. **Set up environment variables**:
    ```bash
    cd backend
    cp .env.example .env
    ```
 
-4. **Configure GitHub SSE MCP Server** (for AI assistant integration):
+5. **Configure GitHub SSE MCP Server** (for AI assistant integration):
    
    a. **Create a GitHub Personal Access Token (PAT)**:
       - Go to GitHub Settings → Developer settings → Personal access tokens → Tokens (classic)
