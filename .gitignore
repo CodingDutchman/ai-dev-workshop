@@ -33,6 +33,7 @@ lerna-debug.log*
 *.swo
 *~
 *.iml
+.history/
 
 # ESLint
 .eslintcache
